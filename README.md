@@ -85,6 +85,6 @@ El proyecto se encuentra apuntando al puerto 3001, donde debería esta levantado
 ![Backend](/Imgs/24a.png)
 
 * Y así es como quedo
-![Backend](/Imgs/25a.png)
+![Backend](/Imgs/25.png)
 
 * A partir de aquí era de replicar lo que ya se desarrollo pero para "productos" y "ordenes".
