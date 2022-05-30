@@ -7,6 +7,7 @@ import {MatSidenav} from '@angular/material/sidenav';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  title = 'technical-test';
   public innerWidth: any;
   public isOpened: boolean = true;
 
