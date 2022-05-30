@@ -1,0 +1,55 @@
+<mat-card>
+    <mat-card-title>Productos</mat-card-title>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="openProductCreateDialog()">Nuevo producto</button>         
+    </mat-card-actions>
+  </mat-card>
+  <br>
+
+
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="UPC">
+      <th mat-header-cell *matHeaderCellDef> UPC </th>
+      <td mat-cell *matCellDef="let element"> {{element.UPC}} </td>
+    </ng-container>  
+    
+    <ng-container matColumnDef="proName">
+      <th mat-header-cell *matHeaderCellDef> Nom. Producto </th>
+      <td mat-cell *matCellDef="let element"> {{element.proName}} </td>
+    </ng-container>
+ 
+    <ng-container matColumnDef="mfgr">
+      <th mat-header-cell *matHeaderCellDef> Fabricante </th>
+      <td mat-cell *matCellDef="let element"> {{element.mfgr}} </td>
+    </ng-container>  
+   
+    <ng-container matColumnDef="model">
+      <th mat-header-cell *matHeaderCellDef> Modelo </th>
+      <td mat-cell *matCellDef="let element"> {{element.model}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="unitListPrice">
+        <th mat-header-cell *matHeaderCellDef> Precio Uni. </th>
+        <td mat-cell *matCellDef="let element"> {{element.unitListPrice}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="unitsInStock">
+        <th mat-header-cell *matHeaderCellDef> Uni. Disponible </th>
+        <td mat-cell *matCellDef="let element"> {{element.unitsInStock}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="acciones">
+        <th mat-header-cell *matHeaderCellDef> Acciones </th>
+        <td mat-cell *matCellDef="let element">
+            <button mat-button  (click)="openProductEditDialog(element)">
+                <mat-icon color="primary">edit</mat-icon>
+            </button>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  

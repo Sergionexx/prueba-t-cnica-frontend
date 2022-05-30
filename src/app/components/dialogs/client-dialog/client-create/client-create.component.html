@@ -1,0 +1,21 @@
+<mat-form-field class="weigth" >
+    <mat-label>Nombre</mat-label>
+    <input matInput [(ngModel)]="dataClient.name">
+</mat-form-field>
+<mat-form-field class="weigth">
+    <mat-label>Apellido</mat-label>
+    <input matInput [(ngModel)]="dataClient.lastname">
+</mat-form-field>
+<mat-form-field class="weigth">
+    <mat-label>Teléfono</mat-label>
+    <input matInput [(ngModel)]="dataClient.phone">
+</mat-form-field>
+<mat-form-field class="weigth">
+    <mat-label>Dirección</mat-label>
+    <input matInput [(ngModel)]="dataClient.street">
+</mat-form-field>
+<mat-form-field class="weigth">
+    <mat-label>Código Postal</mat-label>
+    <input matInput [(ngModel)]="dataClient.zipCode">
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="createClient()" >Crear cliente</button>

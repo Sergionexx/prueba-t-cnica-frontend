@@ -1,0 +1,25 @@
+<mat-form-field class="weigth" >
+    <mat-label>Fecha</mat-label>
+    <input matInput [(ngModel)]="dataOrder.orderDate">
+</mat-form-field>
+<mat-form-field class="weigth">
+    <mat-label>Vendido por</mat-label>
+    <input matInput [(ngModel)]="dataOrder.soldBy">
+</mat-form-field>
+<mat-form-field class="weigth">
+    <mat-label>Cantidad</mat-label>
+    <input matInput [(ngModel)]="dataOrder.quanty">
+</mat-form-field>
+<mat-form-field class="weigth">
+    <mat-label>Precio por uni.</mat-label>
+    <input matInput [(ngModel)]="dataOrder.unitSalePrice">
+</mat-form-field>
+<mat-form-field class="weigth">
+    <mat-label>Subtotal</mat-label>
+    <input matInput [(ngModel)]="dataOrder.subtotal">
+</mat-form-field>
+<mat-form-field class="weigth">
+    <mat-label>Total</mat-label>
+    <input matInput [(ngModel)]="dataOrder.total">
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="createOrder()" >Crear orden</button>

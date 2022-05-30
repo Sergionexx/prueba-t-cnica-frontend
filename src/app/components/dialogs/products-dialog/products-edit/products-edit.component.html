@@ -1,0 +1,25 @@
+<mat-form-field class="weigth" >
+    <mat-label>UPC</mat-label>
+    <input matInput [(ngModel)]="dataProduct.UPC">
+</mat-form-field>
+<mat-form-field class="weigth">
+    <mat-label>Nombre del producto</mat-label>
+    <input matInput [(ngModel)]="dataProduct.proName">
+</mat-form-field>
+<mat-form-field class="weigth">
+    <mat-label>Fabricante</mat-label>
+    <input matInput [(ngModel)]="dataProduct.mfgr">
+</mat-form-field>
+<mat-form-field class="weigth">
+    <mat-label>Modelo</mat-label>
+    <input matInput [(ngModel)]="dataProduct.model">
+</mat-form-field>
+<mat-form-field class="weigth">
+    <mat-label>Precio unitario</mat-label>
+    <input matInput [(ngModel)]="dataProduct.unitListPrice">
+</mat-form-field>
+<mat-form-field class="weigth">
+    <mat-label>Unidades disponibles</mat-label>
+    <input matInput [(ngModel)]="dataProduct.unitsInStock">
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="updateProduct()" >Guardar cambios</button>
