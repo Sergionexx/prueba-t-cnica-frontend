@@ -29,6 +29,7 @@ import { OrderCreateComponent } from './components/dialogs/orders-dialog/order-c
 import { OrderEditComponent } from './components/dialogs/orders-dialog/order-edit/order-edit.component';
 import { ProductsCreateComponent } from './components/dialogs/products-dialog/products-create/products-create.component';
 import { ProductsEditComponent } from './components/dialogs/products-dialog/products-edit/products-edit.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 
@@ -46,6 +47,7 @@ import { ProductsEditComponent } from './components/dialogs/products-dialog/prod
     OrderEditComponent,
     ProductsCreateComponent,
     ProductsEditComponent,
+    HomeComponent,
   ],
   imports: [
     HttpClientModule,

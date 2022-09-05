@@ -7,14 +7,14 @@ import {MatSidenav} from '@angular/material/sidenav';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'technical-test';
+  title = 'lui-bot';
   public innerWidth: any;
   public isOpened: boolean = true;
 
   @HostListener('window:resize', ['$event'])
   onResize(event:any) {
     this.innerWidth = event.target.innerWidth;
-    this.calcSize(this.innerWidth);
+    // this.calcSize(this.innerWidth);
   }
 
   @ViewChild(MatSidenav)
@@ -22,28 +22,28 @@ export class AppComponent {
   
   constructor(){}
   
-  ngAfterViewInit(): void {
-    this.innerWidth = window.innerWidth;
-    this.calcSize(this.innerWidth);    
-  }
+  // ngAfterViewInit(): void {
+  //   this.innerWidth = window.innerWidth;
+  //   this.calcSize(this.innerWidth);    
+  // }
 
-  openSidenav():void{    
-    this.sidenav.mode ='side';
-    this.sidenav.open();
-    this.isOpened = true;     
-  }
+  // openSidenav():void{    
+  //   this.sidenav.mode ='side';
+  //   this.sidenav.open();
+  //   this.isOpened = true;     
+  // }
 
-  closeSidenav():void{
-    this.sidenav.mode ='over';
-    this.sidenav.close();
-    this.isOpened = false;
-  }
+  // closeSidenav():void{
+  //   this.sidenav.mode ='over';
+  //   this.sidenav.close();
+  //   this.isOpened = false;
+  // }
 
-  calcSize(value:number):void{
-    if(value >400){
-      this.openSidenav();
-    }else{
-      this.closeSidenav();
-    }
-  }
+  // calcSize(value:number):void{
+  //   if(value >400){
+  //     this.openSidenav();
+  //   }else{
+  //     this.closeSidenav();
+  //   }
+  // }
 }
